@@ -27,5 +27,10 @@ def kalkulacka():
     else:
         print("Chyba: Neplatná operace.")
         return
+
+    # Zobrazení výsledku
+    print(f"Výsledek: {cislo1} {operace} {cislo2} = {vysledek}")
+
+    
 # Spuštění kalkulačky
 kalkulacka()
