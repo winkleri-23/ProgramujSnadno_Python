@@ -9,5 +9,23 @@ def kalkulacka():
         print("Chyba: Zadaná hodnota není číslo.")
         return
 
+    # Získání operace od uživatele
+    operace = input("Vyberte operaci (+, -, *, /): ")
+
+     # Vykonání operace a výpočet
+    if operace == "+":
+        vysledek = cislo1 + cislo2
+    elif operace == "-":
+        vysledek = cislo1 - cislo2
+    elif operace == "*":
+        vysledek = cislo1 * cislo2
+    elif operace == "/":
+        if cislo2 == 0:
+            print("Chyba: Dělení nulou není možné.")
+            return
+        vysledek = cislo1 / cislo2
+    else:
+        print("Chyba: Neplatná operace.")
+        return
 # Spuštění kalkulačky
 kalkulacka()
